@@ -30,182 +30,151 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	font-family: arial;
+	font-family: tahoma;
 }
 
-.wrapper {
-	width: 1500px;
+.wrap {
+	width: 1900px;
 	margin: 0 auto;
 }
 
-.head1 {
-	height: 30px;
-	background: red;
-	padding-right: 350px;
-	border-bottom: 1px dashed white;
-
+.head {
+	height: 140px;
+	background: #585858;
+	border-bottom: 5px solid #0174DF;
+	box-shadow: inset 1px 0px 2px #000;
 }
 
-.head1 a {
-	text-decoration: none;
-	float: right;
-	margin-left: 10px;
-	color: white; 
+h1 {
+	font-size: 45px ;
+	padding: 15px 0 0 30px;
+	color: #0174DF;
+	letter-spacing: 1px;
 }
 
-.head2 {
-	height: 130px;
-	background: black;
-	padding:60px 0 0 300px;
-	border-bottom: 1px dashed white;
-	
-}
-
-.head2 h1 {
+.head p {
+	padding-left: 150px;
 	color: white;
-	font-size: 35px;
-	font-weight: lighter;
-	position: relative;
-}
-
-h1:before {
-	content:"";
-	display: block;
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	color: yellow;
-	background: yellow;
-	left: -65px;
-}
-
-.head2 p {
-	color: grey;
-	font-size: 20px;
+	letter-spacing: 2px;
 }
 
 .content {
-	background: #F3EFEF;
 	position: relative;
-	height: 800px;
+	background: #F4F4F4;
+	height: 1000px
 }
 
-.menu {
-	height: 60px;
-	width: 65%;
-	background: #FAFAFA;
-	margin-left: 17.5%;
-	text-align: center;
-	border-bottom: 1px dashed black;
-}
-
-.menu a[name] {
-	border-right: 1px dashed black;
-}
-
-.menu a {
-	width: 16.3%;
-	display: block;
-	float: left;
-	text-decoration: none;
-	line-height: 60px;
-	font-size: 20px;
-	color: black;
-	font-weight: bold;	
-	text-align: center;
-	transition: all .3s ease-in-out;
-}
-
-.menu a:hover {
-
-	color: white;
-	background: black;
-}
-
-.menul {
+.contentl {
 	position: absolute;
-	top: -1;
-	height: 60px;
-	width: 5%;
-	background: #535050;
-	left: 13%;
-	border-radius: 15px 0 0 15px;
-	border: 1px dashed black;
+	left: 0;
+	width: 40%;
+	height: 400px;
 }
 
-.menur {
-	position: absolute;
-	height: 60px;
-	width: 5%;
-	background: #535050;
-	right: 13.5%;
-	top: -1;
-	border-radius: 0 15px 15px 0;
-	border: 1px dashed black;
-}
-
-.banner {
-	position: relative;
-	height: 240px;
+.contentlt {
 	width: 75%;
 	margin-left: 12.5%;
-	margin-top: 40px;
-	background: white;
-	border: 1px d=solid grey;
 }
 
-.banner2 {
-	position: absolute;
-	width: 80%;
-	height: 150px;
-	background: red;
-	margin: 45px 0 0 50px;
-	border: 2px dashed black;
+h2 {
+	margin: 15px 0 45px;
+	color: #0174DF;
+	font-size: 30px;
 }
 
-.banner2 h2 {
+.contentlt p[name="ps1"] {
+	width: 68%;
+	margin-left: 15%;
+	color: #A88F50;
+	font: italic bold  15px tahoma;
+}
+
+hr {
+	margin: 25px 0;
+	background: lightgrey;
+	height: 3px;
+	color: lightgrey;
+	border: none;
+}
+
+img {
 	float: left;
-	font-size: 23px;
-	color: white;
-	margin: 60px 30px;
+	width: 150px;
+	padding-right: 10px; 	
 }
 
-.banner2 p {
-	position: absolute;
-	left: 300px;
-	color: grey;
-	font-size: 18px;
-	margin-top: 30px
+.ps2 {
+	width: 80%;
+	margin-left: 10%;
+	color: lightgrey;
+	font: italic bold  15px tahoma;	
 }
 
-.banner2 p:after {
-	content: "";
+.contentc {
 	position: absolute;
-	right: -120px;
-	top: 5px;
-	height: 70px;
-	width: 70px;
-	background: green;
-	border-radius: 50%;
+	margin-left: 40%;
+	width: 20%;
+	height: 800px;
+	background: linear-gradient( 120deg, #2E2E2E 25%, #F4F4F4);
+	box-shadow: 0 0 5px #000;
+	list-style-position: inside;
 }
-.text {
+
+.contentc h2 {
 	text-align: center;
-	margin-top: 15px;
 }
 
-.text h2 {
-	font-size: 25px;
-	font-weight: bold;
+.contentc button {
+	line-height: 70px;
+	width: 100%;
+	text-align: left;
+	background: #848484;
+	border: none;
+	border-bottom: 2px solid #F4F4F4;	
+	color: darkgrey;
+	font-size: 20px;
+	transition: all .5s ease-in-out;
 }
 
-
-.text h3 {
-	font-size: 18px;
-	font-weight: bold;
+.contentc button:hover {
+	border-radius: 4px;
+	background: linear-gradient(#F2F2F2,lightgrey);
+	border: none;
+	box-shadow: 0 0 0px 3px lightgrey, 0 0 5px 2px black, inset 0 0 3px 1px darkgrey;
+	color: black;
 }
 
-.text p {
-	font-size: 17px;
-	border-bottom: 1px dashed black;
-	padding: 20px 20px;
+.contentr {
+	position: absolute;
+	right: 0;
+	width: 40%;
+	height: 400px;
+}
+
+.contentrt  {
+	width: 75%;
+	margin-left: 12.5%;
+}
+
+.contentrt p{
+	margin-bottom: 
+}
+
+.contentrtgline {
+	height: 25px;
+	width: 100%;
+	background: lightgrey;
+	margin: 20px 0;
+}
+
+.contentrtgline p[name="ic"] {
+	float: left;
+	margin: 3px 0 0 25px; 
+	cursor: pointer;
+	color: #0080FF;
+}
+
+.contentrtgline p[name="date"] {
+	float: left;
+	margin: 3px 0 0 25px; 
 }
